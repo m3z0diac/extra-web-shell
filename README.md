@@ -23,6 +23,18 @@
 		$path = "reshell.php";
 	}
 ?>
+<html>
+<body>
+<div class="main">
+	<h1>reverse shell</h1>
+	<form action="<?php echo $_SERVER['PHP_SELF']?>">
+		<textarea type="text" name="payload">your payload here ...</textarea>
+		<input type="submit" name="submit" value="upload">
+	</form>
+</div>
+
+</body>
+</html>
 ```
 
 ## LICENCE
