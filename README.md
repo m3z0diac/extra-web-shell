@@ -1,7 +1,7 @@
 # extra-web-shell
 
 ## What is this?
-#### this is a simple web shell, contains both, bind and option of upload a reverse shell
+#### this is a web shell, contains both, bind and option of upload a reverse shell
 ![extra-shell](https://raw.githubusercontent.com/hamza07-w/extra-web-shell/main/backg.png)
 ## How can this help me?
 ##### well, sometimes when you find a file upload vulnerability, you will find that you can't bypass the extension eaisy, for example you have to try many extension methods such as, php, php5, jpg.php ... this extra web shell, will help you to upload any kind of files start from php, txt ...etc
